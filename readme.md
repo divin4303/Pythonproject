@@ -1,17 +1,37 @@
-sudo service mysql status \
-hostname -I\
-sudo mysql - enter to mysql interface\
---SQL--\
-CREATE USER 'root'@'%' IDENTIFIED BY 'Oct@2019';\
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;\
-FLUSH PRIVILEGES;\
---\
-sudo netstat -tlnp | grep 3306\
-sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
+```bash
+sudo service mysql status
+hostname -I
+sudo mysql - enter to mysql interface\
+```
+--
+```sql
+CREATE USER 'root'@'%' IDENTIFIED BY '*******';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+--
+```bash
+sudo netstat -tlnp | grep 3306
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
 ---
 Raspberry Pi
 ---
 SSH (Industry SSH, TCP/IP etc...)
-* connection through ETHERNET cable
-OPC UA vs WinCC
+* connection through ETHERNET cable or WiFi
+
+Connected through WiFi
+
+Project Directory
+```bash
+mkdir building_automation\
+cd building_automation
+```
+---
+TON, TP, TOF
+---
+
+implimented this in python\
+(Add some diagrams)
+
