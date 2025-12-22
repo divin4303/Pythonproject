@@ -34,4 +34,10 @@ TON, TP, TOF
 
 implimented this in python\
 (Add some diagrams)
-
+---
+establishing MODBUS connection
+---
+```bash
+netstat -ano | findstr :502
+tasklist | findstr 10800
+```
